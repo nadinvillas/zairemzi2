@@ -1,0 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #ffe4ec,
+        #f8b8cc,
+        #fff0f5
+    );
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 15px;
+    overflow-x: hidden;
+}
+
+/* MAIN CARD */
+
+.container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.92);
+    width: 100%;
+    max-width: 650px;
+    padding: 55px 45px;
+    text-align: center;
+    border: 2px solid #e9a4ba;
+    outline: 1px solid white;
+    outline-offset: 7px;
+    border-radius: 12px;
+    box-shadow: 0 15px 45px rgba(171, 75, 110, 0.2);
+    z-index: 2;
+}
+
+/* TEXTS */
+
+.top-text {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #bd718c;
+    margin-bottom: 20px;
+}
+
+.flower {
+    font-size: 35px;
+    color: #d47b9a;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 65px;
+    color: #c75d83;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #8f4965;
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+/* AGE */
+
+.age {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0 10px;
+}
+
+.age span {
+    font-family: 'Playfair Display', serif;
+    font-size: 95px;
+    font-weight: bold;
+    color: #d77f9e;
+    text-shadow: 3px 3px 0 #fce0e9;
+}
+
+.years {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #a75d78;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background: #e5a0b8;
+    margin: 25px auto;
+}
+
+/* CAKE */
+
+.cake {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+/* BIRTHDAY MESSAGE */
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #a64f70;
+    margin: 15px 0;
+}
+
+.message {
+    font-size: 14px;
+    line-height: 2;
+    color: #795563;
+    margin: 15px auto;
+    max-width: 460px;
+}
+
+.wish {
+    font-family: 'Great Vibes', cursive;
+    font-size: 29px;
+    color: #cc6d91;
+    margin-top: 25px;
+}
+
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    color: #a64f70;
+    margin-top: 30px;
+}
+
+/* TAP ME BUTTON */
+
+.tap-button {
+    background: #d77f9e;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(171, 75, 110, 0.2);
+}
+
+.tap-button:hover {
+    background: #bd6688;
+    transform: scale(1.08);
+}
+
+/* HIDDEN PHOTO GALLERY */
+
+.photo-gallery {
+    display: none;
+    margin-top: 45px;
+    padding-top: 35px;
+    border-top: 1px solid #e9b4c7;
+    animation: appear 1s ease;
+}
+
+.photo-gallery h2 {
+    font-family: 'Playfair Display', serif;
+    color: #bd6688;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.gallery-message {
+    color: #9b6479;
+    font-size: 12px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* PHOTOS */
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.photo-card {
+    background: #fff5f8;
+    padding: 10px 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(150, 70, 100, 0.15);
+    transition: 0.3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-6px) rotate(1deg);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 7px;
+    border: 3px solid white;
+}
+
+.photo-card p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 23px;
+    color: #bd6688;
+    margin-top: 12px;
+}
+
+.gallery-ending {
+    font-family: 'Great Vibes', cursive;
+    color: #c75d83;
+    font-size: 27px;
+    margin-top: 30px;
+}
+
+/* GALLERY ANIMATION */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 40px;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #bd8298;
+}
+
+/* FLOATING HEARTS */
+
+.hearts span {
+    position: fixed;
+    bottom: -50px;
+    color: rgba(202, 93, 135, 0.4);
+    font-size: 30px;
+    animation: float 10s infinite ease-in;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hearts span:nth-child(2) {
+    left: 30%;
+    animation-delay: 3s;
+}
+
+.hearts span:nth-child(3) {
+    left: 55%;
+    animation-delay: 5s;
+}
+
+.hearts span:nth-child(4) {
+    left: 75%;
+    animation-delay: 2s;
+}
+
+.hearts span:nth-child(5) {
+    left: 90%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .age span {
+        font-size: 75px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    .wish {
+        font-size: 24px;
+    }
+
+    .photos img {
+        height: 150px;
+    }
+
+    .photo-card p {
+        font-size: 19px;
+    }
+
+}
+

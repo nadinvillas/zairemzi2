@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 20th Birthday!</title>
+    <link rel="stylesheet" href="zairemzi.css">
+</head>
+
+<body>
+
+    <!-- FLOATING HEARTS -->
+    <div class="hearts">
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+    </div>
+
+    <!-- MAIN BIRTHDAY CARD -->
+    <div class="container">
+
+        <p class="top-text">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+
+        <div class="flower">✿</div>
+
+        <h1>Happy Birthday!</h1>
+
+        <h2>Twenty & Fabulous</h2>
+
+        <div class="age">
+            <span>2</span>
+            <span>0</span>
+        </div>
+
+        <p class="years">
+            YEARS OF BEAUTY, LOVE & HAPPINESS
+        </p>
+
+        <div class="line"></div>
+
+        <div class="cake">🎂</div>
+
+        <h3>To My Dorothea,</h3>
+
+        <p class="message">
+            Cheers to 20 beautiful years! May your special day
+            be filled with endless happiness, unforgettable memories,
+            genuine laughter, and all the love you deserve.
+            May this new chapter bring you closer to your dreams
+            and give you countless reasons to smile.
+        </p>
+
+        <p class="wish">
+            Keep shining, keep blooming, and never stop being YOU!
+        </p>
+
+        <div class="signature">
+            With love, ♡
+        </div>
+
+        <!-- TAP ME BUTTON -->
+        <button class="tap-button" onclick="showPhotos()">
+            TAP ME ♡
+        </button>
+
+        <!-- HIDDEN PHOTO GALLERY -->
+        <div class="photo-gallery" id="myPhotos">
+
+            <h2> Our Beautiful Memories ♡</h2>
+
+            <p class="gallery-message">
+                A little collection of memories that I will always treasure.
+            </p>
+
+            <div class="photos">
+
+                <div class="photo-card">
+                    <img src="c:\Users\AUTOCAD PC21\Downloads\dafefa1f-8291-4647-bb50-eecc0fb1643a.jpg" alt="Our memory 1">
+                    <p> Grade 6 Graduation ♡</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="c:\Users\AUTOCAD PC21\Downloads\638feaf4-0037-406a-a2d7-24ac4a4c2be1.jpg"alt="Our memory 2">
+                    <p> Grade 10 Completion</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="c:\Users\AUTOCAD PC21\Downloads\a5158627-5ea1-4d19-be89-e5771d001fe9.jpg" alt="Our memory 3">
+                    <p>Cuteee</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="c:\Users\AUTOCAD PC21\Downloads\16635bdc-ebbf-4a76-a6ff-3a0c96abdf7a.jpg" alt="Our memory 4">
+                    <p>Core Memories</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="c:\Users\AUTOCAD PC21\Downloads\c01f1d49-239c-4e03-a9d4-1556d5d7ee07.jpg" alt="Our memory 5">
+                    <p>Dorothea</p>
+                </div>
+
+                <div class="photo-card">
+                    <img src="c:\Users\AUTOCAD PC21\Downloads\c6f616f3-b0b3-4803-b74e-dcf7a13c1744.jpg" alt="Our memory 6">
+                    <p>Always Together ♡</p>
+                </div>
+
+            </div>
+
+            <p class="gallery-ending">
+                Here's to more memories with you! 💗
+            </p>
+
+        </div>
+
+        <footer>
+            MADE WITH LOVE JUST FOR YOU
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function showPhotos() {
+
+            var gallery = document.getElementById("myPhotos");
+
+            if (gallery.style.display === "block") {
+                gallery.style.display = "none";
+            } else {
+                gallery.style.display = "block";
+
+                gallery.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>
